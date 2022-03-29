@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { NavLink } from "react-router-dom";
 
 const Header = ({ text, bgColor, textColor }) => {
   const headerStyle = {
@@ -11,18 +10,12 @@ const Header = ({ text, bgColor, textColor }) => {
     <header style={headerStyle}>
       <div className="container">
         <h2>{text}</h2>
-        {/* <NavLink to="/" activeClassName="navlink-active">
-          Home
-        </NavLink>
-        <NavLink to="/about" activeClassName="navlink-active">
-          About
-        </NavLink> */}
       </div>
     </header>
   );
 };
 Header.defaultProps = {
-  text: "Feedback UI",
+  text: "Feedback",
   bgColor: "rgba(0,0,0,.3)",
   textColor: "#eee",
 };
