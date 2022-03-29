@@ -1,7 +1,9 @@
-import React, { useEffect, useContext, useState } from "react";
+import React, { useContext } from "react";
+
 import FeedbackContext from "../context/FeedbackContext";
 
-function RatingSelect({ rating, setRating }) {
+function RatingSelect() {
+  const { rating, setRating } = useContext(FeedbackContext);
   const handleChange = (e) => {
     setRating(+e.currentTarget.value);
     console.log(e.currentTarget.value);

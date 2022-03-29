@@ -9,6 +9,50 @@
     @include card;
     background-color: rgba(0, 0, 0, 0.514);
     color: white;
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      color: $color-light-green;
+    }
+    .edit {
+      position: absolute;
+      top: 10px;
+      right: 30px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      color: $color-light-green;
+    }
+    .input-group {
+      display: flex;
+      flex-direction: row;
+      border: 1px solid #ccc;
+      padding: 8px 10px;
+      border-radius: 8px;
+      input[type="text"] {
+        flex-grow: 2;
+        border: none;
+        font-size: 16px;
+        background-color: transparent;
+        color: white;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    .btn {
+      @include btn;
+    }
+    .btn-primary {
+      background-color: $color-light-green;
+    }
+    .btn-secondary {
+      color: #ff6a95;
+    }
   }
 }
 .num-display {

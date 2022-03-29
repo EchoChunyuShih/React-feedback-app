@@ -1,5 +1,7 @@
 import { useContext } from "react";
+
 import FeedbackContext from "../context/FeedbackContext";
+
 const FeedbackStats = () => {
   const { feedback } = useContext(FeedbackContext);
   let avg =

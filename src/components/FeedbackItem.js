@@ -1,9 +1,12 @@
+import { useContext } from "react";
+import PropTypes from "prop-types";
+
 import { IoClose } from "react-icons/io5";
 import { FiEdit } from "react-icons/fi";
-import PropTypes from "prop-types";
+
 import Card from "./shared/Card";
-import { useContext } from "react";
 import FeedbackContext from "../context/FeedbackContext";
+
 function FeedbackItem({ item }) {
   const { deleteFeedback, editFeedback } = useContext(FeedbackContext);
   return (

@@ -1,15 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+
 import Card from "./shared/Card";
 import Button from "./shared/Button";
 import RatingSelect from "./RatingSelect";
-import { useContext } from "react";
 import FeedbackContext from "../context/FeedbackContext";
 
 const FeedbackForm = () => {
-  const { addFeedback, updateFeedback, feedbackEdit } =
+  const { addFeedback, updateFeedback, feedbackEdit, rating, setRating } =
     useContext(FeedbackContext);
   const [text, setText] = useState("");
-  const [rating, setRating] = useState(10);
   const [btnDisabled, setBtnDisabled] = useState(true);
   const [errMsg, setErrMsg] = useState("");
   useEffect(() => {
@@ -19,6 +18,7 @@ const FeedbackForm = () => {
       setRating(feedbackEdit.item.rating);
     }
   }, [feedbackEdit]);
+
   const handleTextChange = (e) => {
     setText(e.target.value);
     console.log(e.target.value.length);
@@ -33,6 +33,7 @@ const FeedbackForm = () => {
       setBtnDisabled(false);
     }
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (text.trim().length > 10) {
@@ -50,18 +51,15 @@ const FeedbackForm = () => {
       setRating("");
     }
   };
+
   return (
     <Card>
       <form onSubmit={handleSubmit}>
         <h3>How would you rate your service with us?</h3>
         <RatingSelect rating={rating} setRating={setRating} />
-        <div
-          // style={inputSection}
-          className="input-group"
-        >
+        <div className="input-group">
           <input
             type="text"
-            // style={inputSelf}
             placeholder="write a review"
             value={text}
             onChange={handleTextChange}
@@ -75,17 +73,5 @@ const FeedbackForm = () => {
     </Card>
   );
 };
-// const inputSection = {
-//   display: "flex",
-//   flexDirection: "row",
-//   border: "1px solid #ccc",
-//   padding: "8 10",
-//   borderRadius: "8",
-// };
-// const inputSelf = {
-//   flexGrow: "2",
-//   border: "none",
-//   fontSize: "16",
-//   " :focus": { outline: "none" },
-// };
+
 export default FeedbackForm;
