@@ -15,7 +15,7 @@
 1. Clone this Repo to your local enviromnent
 
 ```
-$ git clone https://github.com/EchoChunyuShih/react-todo-list-local-storage.git
+$ git clone https://github.com/EchoChunyuShih/React-feedback-app.git
 
 $ cd react-todo-list-local-storage
 ```
