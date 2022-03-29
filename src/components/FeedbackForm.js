@@ -55,9 +55,13 @@ const FeedbackForm = () => {
       <form onSubmit={handleSubmit}>
         <h3>How would you rate your service with us?</h3>
         <RatingSelect rating={rating} setRating={setRating} />
-        <div className="input-group">
+        <div
+          // style={inputSection}
+          className="input-group"
+        >
           <input
             type="text"
+            // style={inputSelf}
             placeholder="write a review"
             value={text}
             onChange={handleTextChange}
@@ -71,5 +75,17 @@ const FeedbackForm = () => {
     </Card>
   );
 };
-
+// const inputSection = {
+//   display: "flex",
+//   flexDirection: "row",
+//   border: "1px solid #ccc",
+//   padding: "8 10",
+//   borderRadius: "8",
+// };
+// const inputSelf = {
+//   flexGrow: "2",
+//   border: "none",
+//   fontSize: "16",
+//   " :focus": { outline: "none" },
+// };
 export default FeedbackForm;
