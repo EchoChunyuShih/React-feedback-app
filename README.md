@@ -39,5 +39,5 @@ $ npm run dev
 ## 🛠 Tools Used
 
 - [concurrently](https://www.npmjs.com/package/concurrently)
+- [framer-motion](https://www.framer.com/motion/)
 - [react-loader-spinner](https://mhnpd.github.io/react-loader-spinner/)
-- [sass](https://www.npmjs.com/package/sass)
