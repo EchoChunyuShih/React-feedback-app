@@ -1,13 +1,8 @@
-import { ThreeDots } from "react-loader-spinner";
+import { ReactComponent as ThreeDots } from "../assets/three-dots.svg";
 const Spinner = () => {
   return (
     <div className="spinner">
-      <ThreeDots
-        width="100"
-        color="#fd6b9498"
-        // strokeWidth="1"
-        // animationDuration="2"
-      />
+      <ThreeDots />
     </div>
   );
 };
