@@ -10,7 +10,12 @@
 
 </div>
 
-# ✨ USAGE
+
+## 📄 Description
+A feedback and rating application using React. JSON-server as RESTapis for the backend of the application.
+Accomplished smooth page transitions using Framer and UI design using Sass.
+
+## ✨ USAGE
 
 1. Clone this Repo to your local enviromnent
 
