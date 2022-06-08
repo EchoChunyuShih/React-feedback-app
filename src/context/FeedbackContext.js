@@ -12,14 +12,12 @@ export const FeedbackProvider = ({ children }) => {
   });
   useEffect(() => {
     const fetchFeedback = async () => {
-      const response = await fetch(
-        `http://localhost:5000/feedback?_sort=id&order=desc`
-      );
+      const response = await fetch(`/feedback?_sort=created_at&_order=desc`);
       const data = await response.json();
       setFeedback(data);
     };
+    fetchFeedback();
     setTimeout(() => {
-      fetchFeedback();
       setIsLoading(false);
     }, 1300);
   }, []);
@@ -32,7 +30,6 @@ export const FeedbackProvider = ({ children }) => {
     }
   };
   const addFeedback = async (newFeedback) => {
-    // newFeedback.id = uuidv4();
     const response = await fetch("/feedback", {
       method: "POST",
       headers: {
