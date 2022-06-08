@@ -9,6 +9,8 @@ import FeedbackContext from "../context/FeedbackContext";
 
 function FeedbackItem({ item }) {
   const { deleteFeedback, editFeedback } = useContext(FeedbackContext);
+  const displayDateTime = new Date(item.created_at).toLocaleString();
+
   return (
     <>
       <Card>
@@ -29,7 +31,10 @@ function FeedbackItem({ item }) {
         >
           <FiEdit />
         </button>
-        <div className="text-display">{item.text} </div>
+        <div className="text-display">
+          <span> {displayDateTime}</span>
+          <span> {item.text}</span>
+        </div>
       </Card>
     </>
   );
