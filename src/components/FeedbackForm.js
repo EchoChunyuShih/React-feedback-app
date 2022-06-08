@@ -17,6 +17,7 @@ const FeedbackForm = () => {
       setText(feedbackEdit.item.text);
       setRating(feedbackEdit.item.rating);
     }
+    // eslint-disable-next-line
   }, [feedbackEdit]);
 
   const handleTextChange = (e) => {
@@ -40,6 +41,7 @@ const FeedbackForm = () => {
       const newFeedback = {
         text,
         rating,
+        created_at: new Date(),
       };
       if (feedbackEdit.edit === true) {
         updateFeedback(feedbackEdit.item.id, newFeedback);
