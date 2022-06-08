@@ -12,8 +12,8 @@
 
 
 ## 📄 Description
-A feedback and rating application using React. JSON-server as RESTapis for the backend of the application.
-Accomplished smooth page transitions using Framer and UI design using Sass.
+A feedback and rating application built using React, JSON-server as RESTful APIs for the backend of the application.
+Accomplished smooth transitions using Framer deployment using Heroku.
 
 ## ✨ USAGE
 
