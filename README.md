@@ -22,7 +22,8 @@ Accomplished smooth page transitions using Framer and UI design using Sass.
 ```
 $ git clone https://github.com/EchoChunyuShih/React-feedback-app.git
 
-$ cd react-todo-list-local-storage
+$ cd react-feedback-app
+
 ```
 
 2. Install dependencies
@@ -45,5 +46,4 @@ $ npm run dev
 
 - [concurrently](https://www.npmjs.com/package/concurrently)
 - [framer-motion](https://www.framer.com/motion/)
-- [react-loader-spinner](https://mhnpd.github.io/react-loader-spinner/)
 - [sass](https://www.npmjs.com/package/sass)
