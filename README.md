@@ -1,10 +1,11 @@
-<h1 align="center"> React feedback app
-</h1>
-
+<h1 align="center"> React feedback app</h1>
+ <p align="center">
+  <a href="https://react-feedback-app-2022.herokuapp.com/"><img alt="codesandbox" src="https://img.shields.io/badge/GO%20TO%20APP-6762a6?style=for-the-badge&logo=heroku&logoColor=white"></a>  
+</p>
 <div align="center">
 <img alt="react" src="https://img.shields.io/badge/React-000?&logo=react"/>  
-  <img alt="npm" src="https://img.shields.io/badge/NPM-blue?logo=npm"/>
-  <img alt="sass" src="https://img.shields.io/badge/SCSS-CC6699?&logo=Sass&logoColor=white">
+<img alt="npm" src="https://img.shields.io/badge/NPM-blue?logo=npm"/>
+<img alt="sass" src="https://img.shields.io/badge/SCSS-CC6699?&logo=Sass&logoColor=white">
 <img alt="styled prettier" src="https://img.shields.io/badge/styled%20with-Prettier-yellow"/>
 <img alt="echo" src="https://img.shields.io/badge/Made%20by-Echo-ff69b4"/>
 
