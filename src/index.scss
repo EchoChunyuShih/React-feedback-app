@@ -99,3 +99,12 @@ ul {
   align-items: center;
   justify-content: center;
 }
+.text-display {
+  display: flex;
+  flex-direction: column;
+  :nth-child(1) {
+    font-weight: 300;
+    font-size: 0.8rem;
+    text-align: end;
+  }
+}
